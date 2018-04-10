@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#2e3040"
+    tools:context="com.example.android.helloandroid.MainActivity">
+
+    <ImageView
+        android:id="@+id/logo"
+        android:layout_width="wrap_content"
+        android:layout_height="60dp"
+        android:scaleType="centerCrop"
+        android:src="@drawable/udacity_logo" />
+
+    <ImageView
+        android:id="@+id/top_banner"
+        android:layout_width="wrap_content"
+        android:layout_height="40dp"
+        android:layout_below="@id/logo"
+        android:scaleType="centerCrop"
+        android:src="@drawable/circuit" />
+
+    <ImageView
+        android:id="@+id/bottom_banner"
+        android:layout_width="wrap_content"
+        android:layout_height="50dp"
+        android:layout_alignParentBottom="true"
+        android:scaleType="centerCrop"
+        android:src="@drawable/circuit" />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/top_banner"
+        android:layout_centerHorizontal="true"
+        android:fontFamily="sans-serif"
+        android:padding="16dp"
+        android:text="DARE\nTO\nLEARN"
+        android:textAlignment="center"
+        android:textColor="@android:color/white"
+        android:textSize="60sp"
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/address_text"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_above="@id/contact_button"
+        android:background="#d9f0f9"
+        android:paddingLeft="120dp"
+        android:text="UDACITY\n2465 Latham St\nMountain View, CA 94043\n650-555-5555"
+        android:textColor="#2e3040"
+        android:visibility="invisible" />
+
+    <Button
+        android:id="@+id/contact_button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@id/bottom_banner"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="10dp"
+        android:backgroundTint="#339fb7"
+        android:onClick="displayInfo"
+        android:text="contact us"
+        android:textColor="@android:color/white"
+        android:textSize="16sp"
+        android:textStyle="bold" />
+
+</RelativeLayout>
